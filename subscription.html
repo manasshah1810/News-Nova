@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+  
+    padding: 0;
+  
+    box-sizing: border-box;
+  }
+  
+  :root {
+    --primary: #ffffff;
+  
+    --text: #272727;
+  
+    --accent: #5057fd;
+  
+    --accent-light: #eff3ff;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+  
+    min-height: 100vh;
+  
+    color: var(--text);
+  
+    background: var(--primary);
+  }
+  
+  a {
+    text-decoration: none;
+  
+    color: currentColor;
+  }
+  
+  li {
+    list-style: none;
+  
+    line-height: 2;
+  }
+  
+  span {
+    font-size: 14px;
+  }
+  
+  p {
+    font-weight: 500;
+  }
+  
+  .pricing__section {
+    margin-block: 3rem;
+  }
+  
+  .wrapper {
+    max-width: 1240px;
+  
+    margin-inline: auto;
+  
+    padding-inline: 1rem;
+  }
+  
+  .title {
+    text-align: center;
+  
+    display: grid;
+  
+    gap: 1rem;
+  
+    place-items: center;
+  }
+  
+  .title h2 {
+    font-size: 40px;
+  }
+  
+  .toggle__section {
+    display: flex;
+  
+    gap: 1rem;
+  
+    align-items: center;
+  }
+  
+  .toggle__section input {
+    display: none;
+  }
+  
+  .toggle__section .toggle__btn {
+    display: flex;
+  
+    padding: 4px;
+  
+    background: var(--accent);
+  
+    border-radius: 2rem;
+  
+    width: 2.35rem;
+  }
+  
+  .toggle__section .toggle__btn span {
+    display: block;
+  
+    width: 1rem;
+  
+    height: 1rem;
+  
+    background: var(--primary);
+  
+    border-radius: 50%;
+  }
+  
+  input:checked ~ .toggle__btn {
+    justify-content: end;
+  }
+  
+  .price__cards {
+    margin-block: 2rem;
+  
+    display: grid;
+  
+    gap: 2rem;
+  
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  
+  .price__card {
+    padding: 2rem 1.5rem;
+  
+    box-shadow: 2px 0 24px #f7f7f7;
+  
+    border-radius: 1rem;
+  
+    display: inline-flex;
+  
+    gap: 1rem;
+  
+    flex-direction: column;
+  }
+  
+  .price__details {
+    flex: 1 1 auto;
+  }
+  
+  .price__details h3 {
+    font-size: 32px;
+  
+    line-height: 1.5;
+  }
+  
+  .price__details ul {
+    margin-block: 1rem;
+  }
+  
+  .price__details ul li::before {
+    content: ">";
+  
+    margin-right: 8px;
+  
+    font-weight: bold;
+  }
+  
+  hr {
+    border: none;
+  
+    height: 0;
+  
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .price__card .price {
+    font-size: 32px;
+  
+    font-weight: 600;
+  
+    letter-spacing: -2px;
+  }
+  
+  .price__card .price:before {
+    content: "₹";
+  }
+  
+  .btn {
+    display: inline-flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    padding: 1rem 2rem;
+  
+    border-radius: 2rem;
+  
+    transition: 0.3s ease-in-out;
+  }
+  
+  .bg__accent {
+    background: var(--accent);
+  
+    color: var(--primary);
+  }
+  
+  .bg__accent-2 {
+    background: var(--accent-light);
+  
+    color: var(--accent);
+  }
+  
+  .bg__primary {
+    background: var(--primary);
+  
+    color: var(--accent);
+  }
+  
+  .btn:hover {
+    transform: scale(0.96);
+  }
+  
+    </style>
+</head>
+<body>
+    <section class="pricing__section">
+        <div class="wrapper">
+          <div class="title">
+            <h2>Choose Your Plan</h2>
+            <div class="toggle__section">
+              <span>Monthly</span>
+              <input type="checkbox" name="" id="check">
+              <label for="check" class="toggle__btn">
+                <span></span>
+              </label>
+              <span>Annualy</span>
+            </div>
+          </div>
+          <div class="price__cards">
+
+            <div class="price__card">
+              <div class="price__details">
+                <h3>Free</h3>
+                <p>Subscribe easily just by number</p>
+                <ul>
+                  <li>Receive latest updates</li>
+                  <li>No need to verify</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price">0</div>
+              <span>Per person</span>
+              <a href="index.html" class="btn bg__accent-2">Get started</a>
+            </div>
+            <div class="price__card bg__accent-2">
+              <div class="price__details">
+                <h3>Pro</h3>
+                <p>Receive key updates/Latest News</p>
+                <ul>
+                  <li>Free bookmarks for key updates</li>
+                  <li>Access your files from any device</li>
+                  <li>Get access to all our services</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price" id="pro">300</div>
+              <span>Per person, monthly</span>
+              <a href="#" class="btn bg__accent">Get Acess</a>
+            </div>
+            <div class="price__card bg__accent">
+              <div class="price__details">
+                <h3>Premium</h3>
+                <p>Send really big files regularly</p>
+                <ul>
+                  <li>Exclusive/Formatted content</li>
+                  <li>Access to blogs/news without copyright</li>
+                  <li>Get access to all our services</li>
+                </ul>
+              </div>
+              <hr>
+              <div class="price" id="premium">700</div>
+              <span>Multiple person, monthly</span>
+              <a href="#" class="btn bg__primary">Get Acess</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <script>
+        let toggleBtn = document.querySelector(".toggle__btn");
+let proPrice = document.querySelector("#pro");
+let premiumPrice = document.querySelector("#premium");
+
+toggleBtn.addEventListener("click", () => {
+  const newPro = proPrice.innerHTML === "300" ? "3200" : "300";
+  proPrice.innerHTML = newPro;
+
+  const newPremium = premiumPrice.innerHTML === "700" ? "8000" : "700";
+  premiumPrice.innerHTML = newPremium;
+});
+      </script>
+</body>
+</html>

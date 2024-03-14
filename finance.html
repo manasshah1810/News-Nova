@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&family=Fraunces:ital,wght@0,500;0,600;0,700;1,600&display=swap');
+
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #f8f3eb;
+  color: #484847;
+  padding-bottom: 5rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.header-search{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+a.footer-social-network-icons.w-inline-block {
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: inline-block;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2em;
+    margin-right: 8px;
+    margin-top: 10px;
+    max-width: 100%;
+    opacity: .8;
+    text-decoration: none;
+  }
+  
+  a.footer-social-network-icons.w-inline-block:active {
+    outline: 0;
+  }
+  
+  a.footer-social-network-icons.w-inline-block:hover {
+    opacity: 1;
+    outline: 0;
+  }
+  div.footer-column.w-clearfix.w-col.w-col-4 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 33.3333%;
+  }
+  
+  div.footer-column.w-clearfix.w-col.w-col-4:after {
+    clear: both;
+    content: " ";
+    display: table;
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+  
+  div.footer-column.w-clearfix.w-col.w-col-4:before {
+    content: " ";
+    display: table;
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+  
+  img.failory-logo-image {
+    border-width: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  h3.footer-failory-name {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    margin-top: 24px;
+  }
+  
+  p.footer-description-failory {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+    margin-top: 15px;
+  }
+  
+  br {
+    box-sizing: border-box;
+  }
+  
+  div.footer-column.w-col.w-col-8 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: relative;
+    width: 66.6667%;
+  }
+  
+  div.w-col.w-col-8 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 66.6667%;
+  }
+  
+  div.w-col.w-col-7.w-col-small-6.w-col-tiny-7 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 58.3333%;
+  }
+  
+  h3.footer-titles {
+    box-sizing: border-box;
+    color: #FFFFFF;
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: 900;
+    line-height: 1.1em;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-top: 24px;
+  }
+  
+  p.footer-links {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.8em;
+    margin-bottom: 16px;
+    margin-top: 2px;
+  }
+  
+  a {
+    background-color: transparent;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.2em;
+    text-decoration: none;
+  }
+  
+  a:active {
+    outline: 0;
+  }
+  
+  a:hover {
+    outline: 0;
+  }
+  
+  span.footer-link {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 300;
+  }
+  
+  span.footer-link:hover {
+    color: #FFFFFF;
+    font-weight: 400;
+  }
+  
+  span {
+    box-sizing: border-box;
+  }
+  
+  strong {
+    box-sizing: border-box;
+    font-weight: 700;
+  }
+  footer{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+  div.container-footer.w-container {
+    background-color: black;
+
+    box-sizing: border-box;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    position: relative;
+    width:100%;
+    margin-top: 0px;
+    padding-bottom: 0%;
+    padding-top: 0px;
+    padding-left: 20px;
+    height:280px;
+  }
+  
+  div.container-footer.w-container:after {
+    clear: both;
+    content: " ";
+    display: table;
+    grid-column-end: 2;
+    grid-column-start: 1;
+    grid-row-end: 2;
+    grid-row-start: 1;
+  }
+  
+  div.w-col.w-col-5.w-col-small-6.w-col-tiny-5 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 41.6667%;
+  }
+  
+  div.column-center-mobile.w-col.w-col-4 {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    width: 33.3333%;
+  }
+  img {
+    border-width: 0;
+    box-sizing: border-box;
+    display: inline-block;
+    max-width: 100%;
+    vertical-align: middle;
+  }
+  
+  p.footer-description {
+    box-sizing: border-box;
+    color: rgba(255, 255, 255, 0.8);
+    display: block;
+    font-family: Lato, sans-serif;
+    font-size: 17px;
+    font-weight: 300;
+    letter-spacing: .5px;
+    line-height: 1.5em;
+    margin-bottom: 16px;
+    margin-top: 15px;
+  }
+  
+  strong.link-email-footer {
+    box-sizing: border-box;
+    font-weight: 700;
+  }
+
+.responsive-wrapper {
+  width: 95%;
+  max-width: 1900px;
+  margin-left: auto;
+  color: #f8f3eb;
+  margin-right: auto;
+}
+
+.header {
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+  background-color: #000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-left {
+
+  svg {
+    max-height: 40px;
+    width: auto;
+  }
+}
+
+.header-middle {
+  display: none;
+  @media (min-width: 1200px) {
+      display: block;
+  }
+}
+
+.header-right {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: none;
+  @media (min-width: 1200px) {
+      display: block;
+  }
+}
+
+.header-link {
+  color: #000;
+  text-decoration: none;
+  margin-left: .75rem;
+  margin-right: .75rem;
+  display: none;
+  font-weight: 500;
+  display: inline-block;
+  &--button {
+    background-color: #000;
+    color: #fff;
+    padding: .5rem 1.25rem;
+  }
+  
+  @media (min-width: 1200px) {
+  }
+}
+
+.header-menu-button {
+  margin-left: .75rem;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  font: inherit;
+  position: relative;
+  padding-right: 30px;
+  font-weight: 500;
+  
+  &:after, &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: currentcolor;
+    right: 0;
+    top: 8px;
+  }
+  
+  &:after {
+    top: 16px;
+    width: 12px;
+    right: 8px;
+  }
+}
+
+.page-title {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  display: flex;
+  justify-content: center;
+  h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #000;
+    text-align: center;
+    position: relative;
+    
+    
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      bottom: -3px;
+      height: 2px;
+      background-color: currentcolor;
+    }
+  }
+}
+
+.magazine-layout {
+  margin-top: 3rem;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-row-gap: 2rem;
+}
+
+.magazine-column {
+  padding: 0 1.5rem;
+  grid-column: span 5;
+  
+  @media (min-width: 1200px) {
+    grid-column: span 1;
+    border-right: 1px solid #CCC;
+    &:last-child {
+      border-right: none;
+    }
+  }
+  
+  &:nth-child(2) {
+    @media (min-width: 1200px) {
+      grid-column: span 2;
+    }
+  }
+}
+
+.article {
+  & + .article {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ccc;
+  }
+}
+
+.article-img {
+  & + * {
+    margin-top: 1rem;
+  }
+}
+
+.article-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.article-title {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #000;
+
+  &--large {
+    font-size: 2rem;
+    & + * {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &--medium {
+    font-size: 1.5rem;
+    & + * {
+      margin-top: 0.75rem;
+    }
+  }
+
+  &--small {
+    font-size: 1.25rem;
+    & + * {
+      margin-top: 0.75rem;
+    }
+  }
+}
+
+.article-link {
+  color: inherit;
+}
+
+.mark {
+  background-color: #fabea1;
+  &--secondary {
+    background-color: #c2dddf;
+  }
+  
+  &--tertiary {
+    background-color: #F8E177;
+  }
+}
+
+.article-excerpt,
+.article-creditation {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  p + p {
+    margin-top: 1.5rem;
+  }
+}
+
+.article-author {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.article-author-img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 12px;
+  background-color: #323232;
+  overflow: hidden;
+  background-blend-mode: multiply;
+
+
+  & + .article-author-info {
+    margin-left: 0.5rem;
+  }
+}
+
+.article-author-info {
+  line-height: 1.375;
+  dl {
+    margin-top: 0.25em;
+  }
+
+  dt {
+    font-weight: 600;
+  }
+
+  dd {
+    font-size: 0.875em;
+  }
+}
+p {
+    color: #000;
+}
+.article-category {
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+  svg {
+    max-width: 1.5rem;
+    margin-right: .5rem;
+    vertical-align: middle;
+  }
+  
+}
+
+.article-podcast-player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  margin-top: 1.25rem;
+}
+
+.podcast-play-button {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 12px;
+  border: 0;
+  background-color: #000;
+  margin-right: .5rem;
+  svg {
+    max-width: 1rem;
+    max-height: 1rem;
+    fill: #FFF;
+  }
+}
+
+.podcast-progression {
+  flex: 1;
+  height: 8px;
+  border-radius: 99em;
+  background-color: #D9D4CD;
+  background-image: linear-gradient(to right, #F99970 30%, #D9D4CD 30%, #D9D4CD 100%)
+}
+
+.podcast-time {
+  font-weight: 500;
+  font-size: 1.125rem;
+  margin-left: .5rem;
+}
+
+:focus {
+  outline: 0;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <header class="header responsive-wrapper" style="color: #f8f3eb;margin-top: 0px;margin-left: 0;padding: 0;margin: 0;width: 100%;margin-bottom: 30px;">
+            <div class="header-left">
+              <img src="Logo.jpg" alt="Logo" style="width: 90px;height: 90px;">
+            </div>
+                <!-- Your existing navigation links -->
+                <a href="index.html" class="header-link" style="color: #f8f3eb;">Latest</a>
+                <span></span>
+                <a href="tech.html" class="header-link" style="color: #f8f3eb;">Technology</a>
+                <span></span>
+                <a href="india.html" class="header-link" style="color: #f8f3eb;">India</a>
+                <span></span>
+                <a href="finance.html" class="header-link" style="color: #f8f3eb;">Finance</a>
+                <span></span>
+                <a href="politics.html" class="header-link" style="color: #f8f3eb">Politics</a>
+                <span></span>
+                          </div>
+            <div class="header-right">
+                <nav class="header-nav">
+                    <a href="login.html" class="header-link" style="color: #f8f3eb">Login</a>
+                    <a href="subscription.html" class="header-link header-link--button" style="color: #f8f3eb">Subscription</a>
+                </nav>
+                <a style="color: #f8f3eb" href="template-mundana-bootstrap-html-master/index.html">Blogs</a>
+                <hr>
+            </div>
+            <br>
+        </header>
+            <div class="header-search" style="display: block;align-self: center;">
+                <form action="/search" method="GET">
+                    <input type="text" name="q" placeholder="Search..." aria-label="Search" style="padding: 8px;
+                    width: calc(100% - 20px);
+                    box-sizing: border-box;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    width: 250px;
+                    height: 30px;
+                    font-size: 16px;">
+                    <button type="submit" aria-label="Submit search" style="padding: 10px 20px;
+                    background-color: #f8f3eb;
+                    color: #484847;
+                    border-color: #000;
+                    text-align: center;
+    
+                    border-radius: 5px;
+                    cursor: pointer;
+                    flex: 0 0 calc(33.33% - 10px);">Search</button>
+                </form>
+                </div>
+      <main class="responsive-wrapper">
+        <div class="page-title">
+          <h1>Finance</h1>
+        </div>
+        <div class="magazine-layout">
+          <div class="magazine-column">
+            <article class="article">
+              <h2 class="article-title article-title--large">
+                <a href="https://www.business-standard.com/finance/news/fintechs-lead-small-ticket-loans-volume-with-77-market-share-report-124031200914_1.html" class="article-link">Fintechs lead small-ticket loans' volume with<mark class="mark mark--primary">77% market share</mark>:Report</a>
+              </h2>
+              <div class="article-excerpt">
+                <p>Fintechs accounted for 50% of the loan volumes disbursed with a ticket size less than Rs 1,00,000 in FY18</p>
+
+
+              </div>
+              <div class="article-author">
+                <div class="article-author-img">
+                  <img src="https://assets.codepen.io/285131/author-3.png" />
+                </div>
+                <div class="article-author-info">
+                  <dl>
+                    <dt>Jay Shah</dt>
+                    <dd>1 Day Ago</dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+            <article class="article">
+              <h2 class="article-title article-title--medium">
+                <a href="https://www.moneycontrol.com/news/photos/business/stocks/buzzing-stocks-tata-motors-iifl-finance-federal-bank-itc-zydus-lt-finance-holdings-and-others-12455961.html" class="article-link">Buzzing Stocks: Tata Motors, IIFL Finance, Federal Bank, ITC, Zydus, L&T Finance Holdings and others</a>
+              </h2>
+              <div class="article-creditation">
+                <p>Stocks to watch: Check out the companies making headlines</p>
+              </div>
+            </article>
+          </div>
+          <div class="magazine-column">
+            <article class="article">
+              <figure class="article-img">
+                <img src="https://www.business-standard.com/assets/web-assets/images/Business_Standard_685x385.jpg" />
+              </figure>
+              <h2 class="article-title article-title--medium">
+                <a href="https://www.business-standard.com/markets/capital-market-news/board-of-iifl-finance-raising-up-to-rs-1500-cr-via-rights-issue-124031300874_1.html" class="article-link">Board of IIFL Finance raising up to Rs 1500 cr via rights issue</a>
+              </h2>
+              <div class="article-excerpt">
+                <p>Also approves NCD issuance up to Rs 500 cr</p>
+              </div>
+              <div class="article-author">
+                <div class="article-author-img">
+                  <img src="https://assets.codepen.io/285131/author-2.png" />
+                </div>
+                <div class="article-author-info">
+                  <dl>
+                    <dt>Neel Shah</dt>
+                    <dd>2 Days Ago</dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="magazine-column">
+            <article class="article">
+              <figure class="article-img">
+                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/37A8/production/_132884241_gettyimages-1920707759.jpg.webp" />
+              </figure>
+              <h2 class="article-title article-title--small">
+                <a href="https://www.bbc.com/news/world-asia-68531241" class="article-link">India signs <mark class="mark mark--secondary">$100bn free trade deal</mark> with four European nations</a>
+              </h2>
+              <div class="article-creditation">
+                <p>India has signed a free-trade agreement (FTA) with a group of four European countries that are not members of the European Union.</p>
+              </div>
+            </article>
+            <article class="article">
+              <figure class="article-img">
+                <img src="https://ichef.bbci.co.uk/news/976/cpsprodpb/64A3/production/_132736752_gettyimages-1257740205-594x594.jpg.webp" />
+              </figure>
+              <h2 class="article-title article-title--small">
+                <a href="https://www.bbc.com/news/world-asia-india-68399872" class="article-link">Byju's: India's once most valuable start-up is fighting to survive</a>
+              </h2>
+              <div class="article-creditation">
+                <p>In 2018, Byju Raveendran was the toast of India's start-up world as his eponymous edtech company, Byju's, was crowned a unicorn.</p>
+              </div>
+            </article>
+          </div>
+          <div class="magazine-column">
+            <article class="article">
+              <h2 class="article-title article-title--medium">
+                <a href="https://www.bbc.com/news/uk-england-norfolk-68513772" class="article-link">Home Office recommends Loddon Indian restaurant closure</a>
+              </h2>
+              <div class="article-excerpt">
+                <p>An Indian restaurant is facing closure by the Home Office due to modern slavery concerns.</p>
+              </div>
+              <div class="article-author">
+                <div class="article-author-img">
+                  <img src="https://assets.codepen.io/285131/author-2.png" />
+                </div>
+                <div class="article-author-info">
+                  <dl>
+                    <dt>Hem Shah</dt>
+                    <dd>3 days ago</dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+            <article class="article">
+              <small class="article-category">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" height="22" viewBox="0 0 28 22">
+        <defs>
+          <clipPath id="clip-headphones">
+            <rect width="28" height="22"/>
+          </clipPath>
+        </defs>
+              <h2 class="article-title article-title--medium">
+                <a href="https://www.bbc.com/news/world-asia-68511113" class="article-link">Sudha Murthy: Rishi Sunak's mother-in-law<mark class="mark mark--tertiary"> to sit in India's parliament</mark></a>
+              </h2>
+              <div class="article-excerpt">
+                <p>UK Prime Minister Rishi Sunak's mother-in-law has been nominated to serve in the upper house of India's parliament.</p>
+              </div>
+                </div>
+
+              </div>
+              <div class="article-author">
+                <div class="article-author-img">
+                  <img src="https://assets.codepen.io/285131/author-3.png" />
+                </div>
+                <div class="article-author-info">
+                  <dl>
+                    <dt>Vraj Varma</dt>
+                    <dd>Reporter</dd>
+                  </dl>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+        <div class="magazine-layout">
+            <div class="magazine-column">
+              <article class="article">
+                <h2 class="article-title article-title--large">
+                  <a href="https://www.bbc.com/news/world-asia-india-68499211" class="article-link">Ukraine war: <mark class="mark mark--primary">India busts network trafficking</mark> people to Russia</a>
+                </h2>
+                <div class="article-excerpt">
+                  <p>Authorities in India say they have busted a network of agents sending people to fight for Russia in Ukraine under the pretext of giving them jobs.</p>
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-3.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>Rachit Jethwa</dt>
+                      <dd>Reporter</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+              <article class="article">
+                <h2 class="article-title article-title--medium">
+                  <a href="https://www.aljazeera.com/news/2024/3/13/who-is-muhammad-aurangzeb-the-man-tasked-with-fixing-pakistans-economy" class="article-link">Who is Muhammad Aurangzeb, the man tasked with fixing Pakistan’s economy?</a>
+                </h2>
+                <div class="article-creditation">
+                  
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <figure class="article-img">
+                  <img src="https://ichef.bbci.co.uk/images/ic/1376x774/p0hh43td.jpg" />
+                </figure>
+                <h2 class="article-title article-title--medium">
+                  <a href="https://www.bbc.com/news/av/world-middle-east-68500221" class="article-link">Footage shows Indian navy rescuing cargo ship crew after Houthi missile attack</a>
+                </h2>
+                <div class="article-excerpt">
+                  <p>The Indian Navy has released footage of a rescue operation after a Houthi missile strike on a cargo ship off southern Yemen.</p>
+                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-2.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>Daksh Shah</dt>
+                      <dd>Editor</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <figure class="article-img">
+                  <img src="https://bsmedia.business-standard.com/_media/bs/img/article/2020-11/02/full/1604271245-9873.jpg?im=FitAndFill=(826,465)" />
+                </figure>
+                <h2 class="article-title article-title--small">
+                  <a href="https://www.business-standard.com/finance/news/nfra-to-set-up-a-sandbox-for-supporting-innovation-in-auditing-techniques-124031300898_1.html" class="article-link">NFRA to set up sandbox for supporting innovation in auditing techniques</a>
+                </h2>
+                <div class="article-creditation">
+                  <p>By Anand Bhatia</p>
+                </div>
+              </article>
+              <article class="article">
+                <figure class="article-img">
+                  <img src="https://cdn.zeebiz.com/sites/default/files/2024/03/13/283966-buy-sell.jpg?im=FitAndFill=(1200,900)" />
+                </figure>
+                <h2 class="article-title article-title--small">
+                  <a href="https://www.bbc.com/news/world-asia-68477000" class="article-link">NBFC stocks: Should you buy Bajaj Finance, Bajaj Finserv, LIC Housing Finance, Shriram Finance now? Here is what Nomura says</a>
+                </h2>
+                <div class="article-creditation">
+                  <p>NBFC stocks to buy: Is it the right time to enter non-banking financial company (NBFC) stocks?</p>
+                </div>
+              </article>
+            </div>
+            <div class="magazine-column">
+              <article class="article">
+                <h2 class="article-title article-title--medium">
+                  <a href="https://www.bbc.com/news/world-asia-india-68476522" class="article-link">Gurugram: India diners spit blood after being served 'dry ice'</a>
+                </h2>
+                <div class="article-excerpt">
+<p>Police in India have arrested the manager of a hotel after it allegedly served dry ice as mouth freshener to a group of diners.</p>                </div>
+                <div class="article-author">
+                  <div class="article-author-img">
+                    <img src="https://assets.codepen.io/285131/author-2.png" />
+                  </div>
+                  <div class="article-author-info">
+                    <dl>
+                      <dt>Yug Rathod</dt>
+                      <dd>Editor</dd>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+                <h2 class="article-title article-title--medium">
+                  <a href="https://www.bbc.com/news/world-asia-india-68476523" class="article-link">GN Saibaba: India <mark class="mark mark--tertiary"> frees disabled academic jailed for Maoist links</mark></a>
+                </h2>
+                </div>
+                    </dl>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+      </main>
+      <footer>
+        <div class="container-footer w-container">
+            <div class="w-row">
+              <div class="footer-column w-clearfix w-col w-col-4"><img src="mainlogo.svg" alt="" width="40" class="failory-logo-image">
+                <h3 class="footer-failory-name">News Nova</h3>
+                <p class="footer-description-failory"><br></p>
+              </div>
+              <div class="footer-column w-col w-col-8">
+                <div class="w-row">
+                  <div class="w-col w-col-8">
+                    <div class="w-row">
+                      <div class="w-col w-col-7 w-col-small-6 w-col-tiny-7">
+                        <h3 class="footer-titles"></h3>
+                        <p class="footer-links"><a href="index.html" target="_blank"><span class="footer-link">Home<br></span></a><a href="index.html"><span class="footer-link">Latest<br></span></a><a href="blog.html"><span class="footer-link">Blog</span></a><span><br></span><a href="sports.html"><span class="footer-link">Sports<br></span></a><a href="tech.html"><span class="footer-link">Tech<br></span></a><a href="finance.html"><span class="footer-link">finance</span></a><strong><br></strong></p>
+                      </div>
+                      <div class="w-col w-col-5 w-col-small-6 w-col-tiny-5">
+                        <h3 class="footer-titles">Other</h3>
+                        <p class="footer-links"><a href=""><span class="footer-link">About Us!<br></span></a><a href=""><span class="footer-link">Join us<br></span></a><a href=""><span class="footer-link"></span></a><a href=""><span class="footer-link">Contribute<br></span></a><a href=""><span class="footer-link">FAQ</span></a><strong><br></strong></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="column-center-mobile w-col w-col-4">
+                    <h3 class="footer-titles">Follow Us!</h3><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbf0a2f2b67e3b3ba079c_Twitter%20Icon.svg" width="20" alt="Twitter icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbfe70fcf5a0514c5b1da_Instagram%20Icon.svg" width="20" alt="Instagram icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dbe42e1e6034fdaba46f6_Facebook%20Icon.svg" width="20" alt="Facebook Icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0002f2b676eb4ba0869_LinkedIn%20Icon.svg" width="20" alt="LinkedIn Icon"></a><a href="" target="_blank" class="footer-social-network-icons w-inline-block"><img src="https://uploads-ssl.webflow.com/5966ea9a9217ca534caf139f/5c8dc0112f2b6739c9ba0871_Pinterest%20Icon.svg" width="20" alt="Pinterest Icon" class=""></a>
+                    <p class="footer-description">Email me at: <a href=""><strong class="link-email-footer">NewsNova@gmail.com</strong></a><br></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </footer>
+</body>
+</html>
