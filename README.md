@@ -17,13 +17,6 @@ News Nova is a website created using HTML, CSS, and JavaScript. It serves as a p
 - JavaScript
 - News API
 
-## Team
-
-- **Anish**: Frontend Developer
-- **Yug**: Backend Developer
-- **Jash**: UI/UX Designer
-- **[Your Name]**: Full Stack Developer
-
 ## Usage
 
 To use News Nova, simply visit the website and explore the latest news articles and blogs. Users can also search for specific topics to find relevant news articles.
